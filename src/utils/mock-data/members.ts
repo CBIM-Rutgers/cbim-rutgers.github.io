@@ -63,8 +63,8 @@ export const mockPeople: Person[] = [
     "interest": "Diffusion Models, Generative Models, Multimodal, MLLM",
     "profileImage": "/images/members/Wenyi_Mo.jpg",
     "id": 6,
-    "personalPageUrl": "/",
-    "enrollYear": 2024,
+    "personalPageUrl": "https://scholar.google.com/citations?user=e3s9h8MAAAAJ",
+    "enrollYear": 2025,
     "position": "PhD Students"
   },
   {
@@ -72,36 +72,36 @@ export const mockPeople: Person[] = [
     "interest": "Embodied AI, LLM, Multimodal",
     "profileImage": "/images/members/Yanting_Yang.jpg",
     "id": 7,
-    "personalPageUrl": "/",
-    "enrollYear": 2024,
+    "personalPageUrl": "https://scholar.google.com/citations?user=UXRnnz8AAAAJ&hl=en",
+    "enrollYear": 2025,
     "position": "PhD Students"
   },
   {
     "name": "Quyen Tran",
-    "interest": "Generative Models",
+    "interest": "Continual Learning, VLM, LLM",
     "profileImage": "/images/members/Quyen_Tran.jpg",
     "id": 8,
-    "personalPageUrl": "/",
-    "enrollYear": 2024,
+    "personalPageUrl": "https://scholar.google.com/citations?hl=en&user=ZtuZhrMAAAAJ&view_op=list_works&sortby=pubdate",
+    "enrollYear": 2025,
     "position": "PhD Students"
 
   },
   {
     "name": "Quang Nguyen",
-    "interest": "Diffusion Models, Multimodal, Generative Models",
+    "interest": "Multimodal, Generative 3D, Video Generation",
     "profileImage": "/images/members/Quang_Nguyen.jpg",
     "id": 9,
-    "personalPageUrl": "/",
-    "enrollYear": 2024,
+    "personalPageUrl": "https://scholar.google.com/citations?user=SUuo7U4AAAAJ",
+    "enrollYear": 2025,
     "position": "PhD Students"
 
   },
   {
     "name": "Quan Dao",
-    "interest": "Diffusion Models, Generative Models",
+    "interest": "Image/Video Generation, 3D Generative",
     "profileImage": "/images/members/Quan_Dao.jpg",
     "id": 10,
-    "personalPageUrl": "/",
+    "personalPageUrl": "https://scholar.google.com/citations?user=g0RS3_kAAAAJ",
     "enrollYear": 2024,
     "position": "PhD Students"
   },
