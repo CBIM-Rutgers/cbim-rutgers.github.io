@@ -33,12 +33,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Optional: for project sites (e.g. user.github.io/repo-name), set BASE_PATH
-      # env:
-      #   BASE_PATH: /${{ github.event.repository.name }}
-
+      # Required for project sites: https://cbim-rutger.github.io/cbim.github.io/
       - name: Build
         run: npm run build
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
