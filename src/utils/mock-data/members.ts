@@ -25,7 +25,7 @@ export const mockPeople: Person[] = [
   // Import the JSON data
   {
     "name": "Wenyi Mo",
-    "interest": "Generative Models, Multimodal Model, RL",
+    "interest": "Generative Models, MMLM, Reinforcement Learning",
     "profileImage": "/images/members/Wenyi_Mo.jpg",
     "id": 2,
     "personalPageUrl": "https://scholar.google.com/citations?user=e3s9h8MAAAAJ",
@@ -34,7 +34,7 @@ export const mockPeople: Person[] = [
   },
   {
     "name": "Yanting Yang",
-    "interest": "Embodied AI, LLM, Multimodal",
+    "interest": "Embodied AI, MLLM, Reinforcement Learning",
     "profileImage": "/images/members/Yanting_Yang.jpg",
     "id": 3,
     "personalPageUrl": "https://scholar.google.com/citations?user=UXRnnz8AAAAJ&hl=en",
@@ -53,7 +53,7 @@ export const mockPeople: Person[] = [
   },
   {
     "name": "Quang Nguyen",
-    "interest": "Multimodal, Generative 3D, Video Generation",
+    "interest": "MLLM, 3D/Video Generative",
     "profileImage": "/images/members/Quang_Nguyen.jpg",
     "id": 5,
     "personalPageUrl": "https://scholar.google.com/citations?user=SUuo7U4AAAAJ",
@@ -111,7 +111,7 @@ export const mockPeople: Person[] = [
     "interest": "Explainable Medical",
     "profileImage": "/images/members/Difei_Gu.jpg",
     "id": 11,
-    "personalPageUrl": "https://github.com/GuoningZhang",
+    "personalPageUrl": "https://scholar.google.com/citations?user=yZkan2cAAAAJ",
     "enrollYear": 2025,
     "position": "PhD Students"
   },
