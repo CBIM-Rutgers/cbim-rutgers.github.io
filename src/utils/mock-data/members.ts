@@ -159,6 +159,15 @@ export const mockPeople: Person[] = [
     "personalPageUrl": "https://scholar.google.com/citations?user=9Xduz3AAAAAJ&hl=en",
     "enrollYear": 2022,
     "position": "PhD Students"
+  },
+  {
+    "name": "Sen Fang",
+    "interest": "3DV, GenAI, ASL",
+    "profileImage": "/images/members/Difei_Gu.jpg",
+    "id": 17,
+    "personalPageUrl": "https://scholar.google.com/citations?user=BJb9MsgAAAAJ&hl=en",
+    "enrollYear": 2024,
+    "position": "PhD Students"
   }
 ];
 
