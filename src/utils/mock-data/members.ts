@@ -25,7 +25,7 @@ export const mockPeople: Person[] = [
   // Import the JSON data
   {
     "name": "Wenyi Mo",
-    "interest": "Diffusion Models, Generative Models, Multimodal, MLLM",
+    "interest": "Generative Models, Multimodal Model, RL",
     "profileImage": "/images/members/Wenyi_Mo.jpg",
     "id": 2,
     "personalPageUrl": "https://scholar.google.com/citations?user=e3s9h8MAAAAJ",
