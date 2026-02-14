@@ -12,7 +12,7 @@ const upcomingEvents = [
   {
     date: "20 Sep 2025",
     time: "11:00AM - 01:00PM",
-    title: "We got 2 NeurIPS papers: AutoEdit and VSS. Congrats to Quan and Gerasimos"
+    title: "We got 2 NeurIPS papers: AutoEdit and VSS. Congrats to Quan and Konstantinos"
   },
   {
     date: "10 Jul 2025",
