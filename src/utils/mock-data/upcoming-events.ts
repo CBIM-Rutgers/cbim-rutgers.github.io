@@ -1,5 +1,15 @@
 const upcomingEvents = [
   {
+    date: "4 April 2026",
+    time: "11:00AM - 01:00PM",
+    title: "We got 2 ACL papers. Congrats to Can and Sen"
+  },
+  {
+    date: "28 Feb 2026",
+    time: "11:00AM - 01:00PM",
+    title: "We got 2 CVPR papers: MPDiT and OT-based Continual Learning. Congrats to Quan and Quyen"
+  },
+  {
     date: "20 Jan 2026",
     time: "11:00AM - 01:00PM",
     title: "We got 2 ICLR papers: K-Prism and TokUR. Congrats to Tunyu and Bangwei"
