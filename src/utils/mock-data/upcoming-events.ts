@@ -7,7 +7,7 @@ const upcomingEvents = [
   {
     date: "28 Feb 2026",
     time: "11:00AM - 01:00PM",
-    title: "We got 2 CVPR papers: MPDiT and OT-based Continual Learning. Congrats to Quan and Quyen"
+    title: "We got 3 CVPR papers including 2 main paper MPDiT and OT-based Continual Learning from Quan and Quyen and 1 finding paper from Yang Zhou"
   },
   {
     date: "20 Jan 2026",
