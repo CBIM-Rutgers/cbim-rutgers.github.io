@@ -1,18 +1,33 @@
 const upcomingEvents = [
   {
+    date: "30 June 2026",
+    time: "11:00AM - 01:00PM",
+    title: "We are proud to announce that CS Professor Dimitris Metaxas will serve as General Chair in ICCV 2031 in Lisbon, Portugal."
+  },
+  {
+    date: "20 June 2026",
+    time: "11:00AM - 01:00PM",
+    title: "We got 3 ECCV papers about generative model and continual learning. Congrats to Quan and Quyen."
+  },
+  {
     date: "4 April 2026",
     time: "11:00AM - 01:00PM",
-    title: "We got 2 ACL papers. Congrats to Can and Sen"
+    title: "We got 6 ICML papers on diverse topic."
+  },
+  {
+    date: "4 April 2026",
+    time: "11:00AM - 01:00PM",
+    title: "We got 2 ACL papers. Congrats to Can and Sen."
   },
   {
     date: "28 Feb 2026",
     time: "11:00AM - 01:00PM",
-    title: "We got 3 CVPR papers including 2 main paper MPDiT and OT-based Continual Learning from Quan and Quyen and 1 finding paper from Yang Zhou"
+    title: "We got 3 CVPR papers including 2 main paper MPDiT and OT-based Continual Learning from Quan and Quyen and 1 finding paper from Yang Zhou."
   },
   {
     date: "20 Jan 2026",
     time: "11:00AM - 01:00PM",
-    title: "We got 2 ICLR papers: K-Prism and TokUR. Congrats to Tunyu and Bangwei"
+    title: "We got 2 ICLR papers: K-Prism and TokUR. Congrats to Tunyu and Bangwei."
   },
   {
     date: "19 Dec 2025",
@@ -22,22 +37,22 @@ const upcomingEvents = [
   {
     date: "20 Sep 2025",
     time: "11:00AM - 01:00PM",
-    title: "We got 2 NeurIPS papers: AutoEdit and VSS. Congrats to Quan and Konstantinos"
+    title: "We got 2 NeurIPS papers: AutoEdit and VSS. Congrats to Quan and Konstantinos."
   },
   {
     date: "10 Jul 2025",
     time: "11:00AM - 12:30PM",
-    title: "We got 1 ICCV paper on Image Editing. Congrats Song Wen"
+    title: "We got 1 ICCV paper on Image Editing. Congrats Song Wen."
   },
   {
     date: "10 May 2025",
     time: "11:00AM - 12:30PM",
-    title: "We got 1 ICML paper on LLM Hallucination. Congrats Zhuowei"
+    title: "We got 1 ICML paper on LLM Hallucination. Congrats Zhuowei."
   },
   {
     date: "29 Jan 2025",
     time: "11:00AM - 12:30PM",
-    title: "We got 5 CVPR papers on diverse topics. Congrats Zhenting, Zhiyu, Zhixing, Yunhe and Di"
+    title: "We got 5 CVPR papers on diverse topics. Congrats Zhenting, Zhiyu, Zhixing, Yunhe and Di."
   }
 ]
 

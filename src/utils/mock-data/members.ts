@@ -133,15 +133,15 @@ export const mockPeople: Person[] = [
     "enrollYear": 2022,
     "position": "PhD Students"
   },
-  {
-    "name": "Bingyu Xin",
-    "interest": "Medical Image",
-    "profileImage": "/images/members/Difei_Gu.jpg",
-    "id": 14,
-    "personalPageUrl": "https://scholar.google.com/citations?user=ENG4A1gAAAAJ&hl=en",
-    "enrollYear": 2020,
-    "position": "PhD Students"
-  },
+  // {
+  //   "name": "Bingyu Xin",
+  //   "interest": "Medical Image",
+  //   "profileImage": "/images/members/Difei_Gu.jpg",
+  //   "id": 14,
+  //   "personalPageUrl": "https://scholar.google.com/citations?user=ENG4A1gAAAAJ&hl=en",
+  //   "enrollYear": 2020,
+  //   "position": "PhD Students"
+  // },
   {
     "name": "Bangwei Guo",
     "interest": "Medical, MRI, Cardiac Imaging",
@@ -168,7 +168,16 @@ export const mockPeople: Person[] = [
     "personalPageUrl": "https://scholar.google.com/citations?user=BJb9MsgAAAAJ&hl=en",
     "enrollYear": 2024,
     "position": "PhD Students"
-  }
+  },
+  {
+    "name": "Duc Vu",
+    "interest": "Image/Video Generation, 3D Generative",
+    "profileImage": "/images/members/Quan_Dao.jpg",
+    "id": 6,
+    "personalPageUrl": "https://scholar.google.com/citations?user=mUHCYJsAAAAJ",
+    "enrollYear": 2026,
+    "position": "PhD Students"
+  },
 ];
 
 // Helper function to group people by position
