@@ -1,2 +1,17 @@
-.env
-node_modules
+# dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.pyc
+_cite/.cache/
+
+# env and OS files
+.env*
+.DS_Store

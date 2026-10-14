@@ -37,7 +37,6 @@ const getImageSrc = (imagePath: string) => {
 
 export default function ProfileCard({ person }: ProfileCardProps) {
   const imageSrc = getImageSrc(person.profileImage);
-  console.log("Image source:", imageSrc);
   return (
     <div
       className="hover:shadow-2xl 
@@ -49,7 +48,7 @@ export default function ProfileCard({ person }: ProfileCardProps) {
         {/* Profile image */}
         <div className="relative w-[220px] h-[260px] cursor-pointer">
           <Image
-            src={person.profileImage}
+            src={imageSrc}
             alt={`${person.name} profile picture`}
             fill
             className="object-cover

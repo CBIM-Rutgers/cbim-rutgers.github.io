@@ -7,12 +7,14 @@ const PAGE_ROUTES = [
     name: "Members",
     path: "/members",
   },
+  // Publications page is turned off; to re-enable, rename src/app/_publications
+  // back to src/app/publications and restore this entry.
+  // {
+  //   name: "Publications",
+  //   path: "/publications",
+  // },
   {
-    name: "Publications",
-    path: "/publications",
-  },
-  {
-    name: "Joining us",
+    name: "Joining Us",
     path: "/joining-us",
   },
 ]

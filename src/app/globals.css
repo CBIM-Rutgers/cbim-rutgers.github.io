@@ -50,3 +50,21 @@ body {
 .profile-container:hover .pi-image-group {
   clip-path: circle(100% at 50% 35%);
 }
+
+/* Thin, branded scrollbar for scrollable lists (news, alumni) */
+.scroll-panel {
+  scrollbar-width: thin;
+  scrollbar-color: #cc0033 #f3f4f6;
+}
+
+.scroll-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-panel::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.scroll-panel::-webkit-scrollbar-thumb {
+  background: #cc0033;
+}

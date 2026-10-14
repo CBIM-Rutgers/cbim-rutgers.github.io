@@ -179,7 +179,7 @@ export default function Publications({ publications }: PublicationsProps) {
         {/* Thumbnail image */}
         <Image
           src={backgroundImage}
-          alt="Rutgers AI Lab Background"
+          alt="CBIM at Rutgers University"
           className="object-cover  w-full h-[360px]"
         />
         {/* Main content */}
@@ -242,7 +242,7 @@ export default function Publications({ publications }: PublicationsProps) {
           <div className="sticky top-[120px] z-40 bg-white border-b border-gray-200 py-3 md:px-3">
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
               <span className="text-sm font-semibold text-gray-700">
-                Conference:
+                Venue:
               </span>
               <div className="flex flex-wrap gap-2">
                 {VENUE_OPTIONS.map((venue) => (

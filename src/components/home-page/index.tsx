@@ -11,7 +11,7 @@ export default function Home() {
           {/* Thumbnail image */}
           <Image
             src={backgroundImage}
-            alt="Rutgers AI Lab Background"
+            alt="CBIM at Rutgers University"
             className="object-cover object-left "
             fill
           />

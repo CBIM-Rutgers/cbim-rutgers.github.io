@@ -10,7 +10,8 @@ export default function Menu({
   isMenuOpen: boolean;
   setIsMenuOpen: (isOpen: boolean) => void;
 }>) {
-  const pathname = usePathname();
+  // Static export uses trailing slashes ("/members/"); normalize to match routes
+  const pathname = usePathname().replace(/(.)\/$/, "$1");
   const router = useRouter();
 
   return (
@@ -30,10 +31,6 @@ export default function Menu({
         {PAGE_ROUTES.map((route) => (
           <button
             key={route.name}
-            /* TODO: enable after page implemented */
-            style={{
-              pointerEvents: route.path === "/joining-us" ? "none" : "auto",
-            }}
             onClick={() => {
               router.push(route.path);
               setIsMenuOpen(false);

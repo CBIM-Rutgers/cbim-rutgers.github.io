@@ -2,6 +2,7 @@ import Image from "next/image";
 import backgroundImage from "@images/home/bg.png";
 import MemberListItem from "./member-list-item";
 import AlumniListItem from "./alumni-list-item";
+import ScrollPanel from "@/components/scroll-panel";
 import { mockPeople, groupPeopleByPosition } from "@/utils/mock-data/members";
 import { getAlumniFromCSV } from "@/utils/lib/get-alumni";
 
@@ -28,7 +29,7 @@ export default async function Members() {
       <div className="w-full flex flex-col items-center">
         <Image
           src={backgroundImage}
-          alt="Rutgers AI Lab Background"
+          alt="CBIM at Rutgers University"
           className="object-cover w-full h-[360px]"
         />
         <div
@@ -148,11 +149,11 @@ export default async function Members() {
               Links go to Google Scholar or personal research profiles when
               available.
             </p>
-            <div className="mt-2">
+            <ScrollPanel className="max-h-[520px] mt-2 pb-8">
               {alumni.map((entry) => (
                 <AlumniListItem key={`${entry.name}-${entry.year}`} entry={entry} />
               ))}
-            </div>
+            </ScrollPanel>
           </div>
         </div>
       </div>

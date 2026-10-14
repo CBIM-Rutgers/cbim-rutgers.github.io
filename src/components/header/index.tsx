@@ -15,7 +15,8 @@ export default function Header({
   isMenuOpen: boolean;
   setIsMenuOpen: (isOpen: boolean) => void;
 }>) {
-  const pathname = usePathname();
+  // Static export uses trailing slashes ("/members/"); normalize to match routes
+  const pathname = usePathname().replace(/(.)\/$/, "$1");
 
   return (
     <div className="flex justify-center w-full fixed top-0 left-0 bg-white z-[999] shadow-lg">
@@ -27,7 +28,7 @@ export default function Header({
       w-full h-[60px]"
       >
         {/* Lab name */}
-        <div className="flex items-end justify-start gap-2">
+        <Link href="/" className="flex items-end justify-start gap-2">
           <Image
             src={logo}
             alt="CBIM Logo"
@@ -39,17 +40,13 @@ export default function Header({
           <div className="border-l-2 pl-2  text-3xl font-bold leading-none">
             CBIM
           </div>
-        </div>
+        </Link>
         {/* Navigators */}
         <div className="hidden items-center justify-start h-full md:flex">
           {PAGE_ROUTES.map((route) => (
             <Link
               key={route.name}
               href={route.path}
-              /* TODO: enable after page implemented */
-              style={{
-                pointerEvents: route.path === "/joining-us" ? "none" : "auto",
-              }}
               className="ml-8 text-lg font-bold tracking-wider h-full "
             >
               <div className="relative h-full flex items-center justify-center group">

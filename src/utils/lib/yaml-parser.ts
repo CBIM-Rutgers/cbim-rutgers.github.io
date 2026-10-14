@@ -5,6 +5,7 @@ import path from "path";
 import { promises as fs } from "fs";
 import { Paper, YearGroup } from "@/types/research/research-types";
 import { getPaperDisplayYear } from "./paper-display-year";
+import { normalizeVenue } from "@/utils/consts/venues";
 
 
 /**
@@ -98,27 +99,26 @@ export const getYamlResearchPapersGroupedByYear = async (): Promise<YearGroup[]>
   const papers = await getResearchPapersForPage();
 
   const DISPLAY_YEAR_MIN = 2023;
-  const DISPLAY_YEAR_MAX = 2025;
+  const DISPLAY_YEAR_MAX = new Date().getFullYear();
   const TITLE_BLOCKLIST = ["TokenSeek"];
-  const DISPLAY_VENUES = new Set([
-    "CVPR",
-    "ICCV",
-    "ECCV",
-    "ICML",
-    "ICLR",
-    "NeurIPS",
-    "AAAI",
-    "WACV",
-  ]);
+
+  // Scholar often lists the same paper twice (e.g. proceedings and journal version)
+  const seenTitles = new Set<string>();
+  const titleKey = (title: string) => title.toLowerCase().replace(/[^a-z0-9]/g, "");
 
   const groups = papers.reduce((acc: Record<number, Paper[]>, paper) => {
     if (!paperHasMetaxas(paper)) return acc;
+    // Published papers only: preprints and unrecognized venues have no venue
+    const venue = normalizeVenue(paper.publisher);
+    if (!venue) return acc;
     const year = getPaperDisplayYear(paper);
     if (year < DISPLAY_YEAR_MIN || year > DISPLAY_YEAR_MAX) return acc;
-    if (!paper.venue || !DISPLAY_VENUES.has(paper.venue)) return acc;
     if (TITLE_BLOCKLIST.some((bl) => paper.title.includes(bl))) return acc;
+    const key = titleKey(paper.title);
+    if (seenTitles.has(key)) return acc;
+    seenTitles.add(key);
     if (!acc[year]) acc[year] = [];
-    acc[year].push(paper);
+    acc[year].push({ ...paper, venue });
     return acc;
   }, {});
 

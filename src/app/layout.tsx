@@ -28,8 +28,20 @@ const sourceSansPro = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "CBIM Rutgers",
-  description: "Prof. Dimitris Metaxas lab: CBIM Rutgers",
+  metadataBase: new URL("https://cbim-rutgers.github.io"),
+  title: {
+    default: "CBIM | Rutgers University",
+    template: "%s | CBIM Rutgers",
+  },
+  description:
+    "The Center for Computational Biomedicine Imaging and Modeling (CBIM) at Rutgers University, led by Prof. Dimitris Metaxas. Research in generative models, computer vision, LLMs and biomedical AI.",
+  openGraph: {
+    title: "CBIM | Rutgers University",
+    description:
+      "Center for Computational Biomedicine Imaging and Modeling at Rutgers University, led by Prof. Dimitris Metaxas.",
+    siteName: "CBIM Rutgers",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
